@@ -1,5 +1,1 @@
-appache.log
-jboss.log
-websphere.log
-weblogic.log
-tomcat.log
+*.log
