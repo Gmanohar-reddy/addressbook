@@ -1,0 +1,18 @@
+insert into mani(s_no,column_1,column_2,column_3) values(1,'mani','ravi','rafi')
+insert into mani (s_no,column_1,column_2,column_3) values(2,'nani','nani1','nani2'),(3,'baby','baby1','baby2'),(4,'amma','amma1','amma2')
+select column_3 from mani
+select column_3 from mani where s_no=4
+exec sp_rename 'mani.column_4','column_1','column'
+select * from mani
+select count(column_2) from mani
+alter table mani add column_4 varchar(40)
+update mani set column_4='karthi' where s_no=1
+update mani set column_4='mahi' where s_no=2
+
+alter table mani drop column column_2
+delete from mani where s_no=1
+insert into mani(column_4) values(1,'mani','baby','nani')
+
+delete from mani
+
+
